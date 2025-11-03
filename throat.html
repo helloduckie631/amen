@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Throat Chakra — AMEN</title>
+<style>
+:root{--bg:#4da6ff;--white:#111;}
+body{margin:0;font-family:Inter,system-ui,Arial;min-height:100vh;background:var(--bg);color:var(--white);display:flex;flex-direction:column;align-items:center;padding:30px;}
+.card{background:#fff;border-radius:14px;color:#111;max-width:900px;width:100%;padding:26px;box-shadow:0 12px 40px rgba(0,0,0,0.25);opacity:0;animation:fadeIn 3s forwards;}
+h1{margin:0;font-size:36px;}
+.sanskrit{color:rgba(0,0,0,0.6);margin-top:6px;}
+.affirm{font-weight:700;margin-top:12px;font-size:18px;color:#111;opacity:0;animation:fadeIn 3s forwards;}
+.pose{margin-top:18px;display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;opacity:0;animation:fadeIn 3s forwards;}
+.pose .img{flex:1;min-width:260px;border-radius:8px;overflow:hidden;border:1px solid #eee;}
+.pose .img img{width:100%;border-radius:8px;}
+.pose .instructions{flex:1;min-width:260px}
+.back{display:inline-block;margin-top:18px;padding:10px 14px;border-radius:10px;background:rgba(0,0,0,0.06);text-decoration:none;color:inherit}
+.audio-btn{margin-left:8px;padding:8px 12px;border-radius:8px;background:#222;color:#fff;border:none;cursor:pointer}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@media(max-width:680px){.pose{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div class="card" role="main">
+<h1>Throat Chakra — Vishuddha</h1>
+<div class="sanskrit">Communication</div>
+<div class="affirm">I am expressive and truthful.</div>
+<p style="margin-top:12px;color:#333;">This page offers a short healing practice for the throat chakra focusing on yoga poses and breath to bring balance.</p>
+<div class="pose">
+  <div class="img"><img src="https://images.unsplash.com/photo-1603985529862-9dcb56e3d295" alt="Fish Pose (Matsyasana)"></div>
+  <div class="instructions">
+    <h3>Pose: Fish Pose (Matsyasana)</h3>
+    <ol>
+      <li>Begin in a comfortable standing or seated position.</li>
+      <li>Move mindfully into fish pose (matsyasana) following your breath.</li>
+      <li>Hold for 3–7 breaths, focusing on the area of the throat chakra.</li>
+      <li>Release slowly and rest with attentive breath.</li>
+    </ol>
+    <p><strong>Tip:</strong> Combine with the affirmation above. Repeat it silently with each inhale.</p>
+  </div>
+</div>
+<div style="margin-top:18px;">
+<a class="back" href="index.html">← Back to Home</a>
+<button class="audio-btn" onclick="toggleAudio()">Play Ambient</button>
+<audio id="ambient" preload="none"></audio>
+</div>
+</div>
+<script>
+function toggleAudio(){const a=document.getElementById('ambient');if(!a.src){alert('No audio source provided. Replace the <audio> source in the HTML with a meditation MP3 URL to enable this.');return;}if(a.paused)a.play();else a.pause();}
+</script>
+</body>
+</html>
