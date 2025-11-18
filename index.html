@@ -5,9 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>AMEN — Your Guru to Be Better</title>
 <style>
-:root{--dark-purple:#9c62d6;--white:#fff;}
-body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;min-height:100vh;background:var(--dark-purple);color:var(--white);display:flex;flex-direction:column;align-items:center;padding:40px 16px;}
-h1{font-size:96px;margin:0;font-weight:900;text-transform:uppercase;letter-spacing:2px;}
+:root {
+  --dark-purple: #9c62d6; /* rich purple */
+  --white: #ffffff;        /* text color */
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background-color: var(--dark-purple); /* ensures purple background */
+  color: var(--white);                  /* ensures text is white */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+}h1{font-size:96px;margin:0;font-weight:900;text-transform:uppercase;letter-spacing:2px;}
 .lotus{width:120px;height:120px;margin:16px auto;display:block;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;width:100%;max-width:1100px;margin-top:40px;}
 .tile{background:rgba(255,255,255,0.06);padding:18px;border-radius:12px;cursor:pointer;transition:transform .18s;display:flex;flex-direction:column;align-items:flex-start;opacity:0;animation:fadeIn 3s forwards;}
